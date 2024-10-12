@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai3</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .container {
+            display:flex;
+            align-items: stretch;
+            flex-direction: row;
+        }
+        .box {
+            display: flex;
+            background-color:rgb(82, 168, 225);
+            margin: 2px;
+            justify-content: flex-start;
+            flex-basis: 100px;
+            height: 50px;
+            align-items: center;
+        }
+        .a {
+            
+            flex-grow: 1;
+        }
+
+        .b {
+            
+            flex-grow: 1;
+        }
+
+        .c {
+            justify-content: space-between;
+            justify-items:center;
+            background-color: yellow;
+            flex-grow: 4;
+        }
+        .d {
+            flex-grow: 1;
+        }
+        .e {
+            flex-grow: 1;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box a">hop A</div>
+        <div class="box b" >hop B</div>
+        <div class="box c" >hop C (trung tam)</div>
+        <div class="box d" >hop D</div>
+        <div class="box e" >hop E</div>
+    </div>
+</body>
+
+</html>

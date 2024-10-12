@@ -1,0 +1,75 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left:auto ;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.Dangky {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    background-color: teal;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.items{
+
+}
+.Dangky label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.Dangky input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.Dangky button {
+    padding: 10px;
+    background-color: orange;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.Dangky button:hover {
+    background-color: darkorange;
+}
+
+/* Breakpoints */
+@media (max-width: 640px) {
+    .body{
+        background-color: teal;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+    .body{
+        background-color: teal;
+    }
+}
+
+@media (min-width: 1024px) {
+    .body{
+        background-color: teal;
+    }
+}

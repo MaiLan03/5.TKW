@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .product {
+            background-color: white;
+            width: 30%;
+            padding: 13px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product h2 {
+            font-size: 13px;
+            color: #888
+        }
+
+        .product .discount {
+            color: red;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .product .old-price {
+            text-decoration: line-through;
+            font-size: 12px;
+            color: #999;
+        }
+
+        .product .price{
+            color:#000000;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product {
+                width: 80%;
+                margin-bottom: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <img src="./image/iphone6.jpg" alt="Điện thoại iPhone 6">
+            <h2>Điện Thoại iPhone 6 32GB VN/A (Vàng Đồng) - Hàng Chính Hãng</h2>
+            <p class="price">6.199.000 đ <span class="old-price">8.990.000 đ</span> <span class="discount">-31%</span></p>
+        </div>
+
+        <div class="product">
+            <img src="./image/samsung j2.jpg" alt="Điện thoại Samsung J2">
+            <h2>Điện Thoại Samsung Galaxy J2 Pro 2018 - Hàng Chính Hãng</h2>
+            <p class="price">2.360.000 đ <span class="old-price">3.290.000 đ</span> <span class="discount">-28%</span></p>
+        </div>
+
+        <div class="product">
+            <img src="./image/xiaomi mi mix 2.jpg" alt="Điện thoại Xiaomi Mi Mix 2">
+            <h2>Điện Thoại Xiaomi Mi Mix 2 (Black) - Hàng Chính Hãng</h2>
+            <p class="price">7.290.000 đ <span class="old-price">12.990.000 đ</span> <span class="discount">-44%</span></p>
+        </div>
+    </div>
+</body>
+</html>

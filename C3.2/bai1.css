@@ -1,0 +1,36 @@
+.gia {
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.a {
+    font-size: 18px;
+}
+
+.b {
+    display: inline-block;
+    background-color: #0054a6;
+    color: #fff;
+    padding: 2px 7px;
+    border-radius: 5px;
+}
+
+.d {
+    color: #e2ff0a;
+    font-weight: bold;
+}
+
+.c {
+    color: #0096ff;
+}
+
+.x{
+    color: green;
+    font-size: px;
+}
+
+.gia2 {
+    color: gray;
+    font-size: 18px;
+}

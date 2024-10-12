@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Base styles for the layout */
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header"
+                "main"
+                "aside1"
+                "aside2"
+                "footer";
+            grid-gap: 10px;
+            text-align: center;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: coral;
+            padding: 20px;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: deepskyblue;
+            padding: 20px;
+        }
+
+        .aside1 {
+            background-color: yellow;
+            padding: 20px;
+        }
+
+        .aside2 {
+            grid-area: aside2;
+            background-color: pink;
+            padding: 20px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: lightgreen;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Layout for screens >= 1024px */
+        @media (min-width: 1024px) {
+            .container {
+                grid-template-areas:
+                    "header header header"
+                    "aside1 main aside2"
+                    "footer footer footer";
+                grid-template-columns: 1fr 2fr 1fr;
+            }
+        }
+
+        /* Layout for screens >= 768px and < 1024px */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .container {
+                grid-template-areas:
+                    "header header header"
+                    "main main main"
+                    "aside1 aside2 aside2"
+                    "footer footer footer";
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Layout for screens < 768px */
+        @media (max-width: 767px) {
+            .container {
+                grid-template-areas:
+                    "header"
+                    "main"
+                    "aside1"
+                    "aside2"
+                    "footer";
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">Header</div>
+    <div class="main">Main Content</div>
+    <div class="aside1">Aside 1</div>
+    <div class="aside2">Aside 2</div>
+    <div class="footer">Footer</div>
+</div>
+
+</body>
+</html>

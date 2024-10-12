@@ -1,0 +1,33 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+.row {
+    display: flex;
+}
+.row .container {
+    flex:1 ;
+    display: flex;
+    align-items: stretch;
+}
+.row .d {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.a{
+    background-color: tomato;
+}
+
+.b{
+    background-color:yellow ;
+}
+
+.c{
+    background-color:purple;
+}
+
+.e{
+    background-color:green;
+}

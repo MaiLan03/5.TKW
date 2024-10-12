@@ -1,0 +1,25 @@
+.left, .middle, .right{
+    height:200px;
+}
+.left{
+    background-color: blue;
+    float: left;
+    width: 40%;
+}
+.middle{
+    background-color: red;
+    float: left;
+    width: 20%;
+}
+.right{
+    background-color: green;
+    float: right;
+    width: 40%;
+}
+
+@media only screen and (max-width:786px){
+    .left, .right, .middle{
+        float: none;
+        width:100%;
+    }
+}
