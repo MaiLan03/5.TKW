@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bai3</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            background-color: rgb(228, 226, 226);
+            flex-wrap: wrap;
+            align-self: stretch;
+        }
+
+        .box {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            background-color:white;
+            gap: 5px;
+            padding: 20px;
+            border: 1px groove ;
+            text-align: center;
+            justify-content: center;
+            font-weight: bold;
+            margin:5px;
+            border-radius: 5px;
+            flex-basis: auto;
+        }
+        #a{
+            text-align: center;
+            font-style:normal;
+            color:gray;
+            font-size: 12px;
+            justify-content: center;
+        }
+
+        @media (max-width: 1024px) {
+            .flex-containe{
+                flex-direction: column;
+                display:flex;
+            }
+        }
+        @media (min-width: 1024px) {
+            .flex-containe{
+                flex-direction: row;
+                display:flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="box sp1">Sản phẩm 1
+            <br>
+            <p id="a">Mô tả sản phẩm 1</p>
+        </div>
+        <div class="box sp2">Sản phẩm 2<br>
+            <p id="a">Mô tả sản phẩm 2</p>
+        </div>
+        <div class="box sp3">Sản phẩm 3<br>
+            <p id="a">Mô tả sản phẩm 3</p>
+        </div>
+        <div class="box sp4">Sản phẩm 4<br>
+            <p id="a">Mô tả sản phẩm 4</p>
+        </div>
+        <div class="box sp5">Sản phẩm 5<br>
+            <p id="a">Mô tả sản phẩm 5</p>
+        </div>
+        <div class="box sp6">Sản phẩm 6<br>
+            <p id="a">Mô tả sản phẩm 6</p>
+        </div>
+        <div class="box sp7">Sản phẩm 7<br>
+            <p id="a">Mô tả sản phẩm 7</p>
+        </div>
+        <div class="box sp8">Sản phẩm 8<br>
+            <p id="a">Mô tả sản phẩm 83</p>
+        </div>
+    </div>
+</body>
+
+</html>

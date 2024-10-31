@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-3.1b</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-rows: auto auto auto;
+            gap: 5px;
+            background-color: #fc862c;
+            border: 5px solid #fc862c ;
+        }
+        .grid-item {
+            background-color: #fce29f;
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+
+        }
+        .item1 {
+            grid-column: 1/4;
+        }
+        .item2 {
+            grid-row: 2/5;
+        }
+        .item3 {
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        .item4 {
+            font-size: 20px;
+            text-align: center;
+        }        
+        .item5 {
+            grid-column: 2/4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item item1">Header</div>
+        <div class="grid-item item2">Menu</div>
+        <div class="grid-item item3">Main</div>
+        <div class="grid-item item4">Right</div>
+        <div class="grid-item item5">Footer</div>
+    </div>
+</body>
+</html>

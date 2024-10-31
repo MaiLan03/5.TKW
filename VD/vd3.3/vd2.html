@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .item5 {
+      grid-area: a5;
+      /* grid-area: 2/3/7/7; */
+      background-color: rgb(234, 255, 0);
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'a1 a2 a3 a4 a6 a7 '
+        'a8 a9 a5 a5 a5 a5'
+        'a10 a11 a5 a5 a5 a5'
+        'a12 a13 a5 a5 a5 a5'
+        'a14 a15 a5 a5 a5 a5';
+      gap: 5px;
+      padding: 5px;
+      background-color: blue;
+    }
+
+
+
+    .grid-container>div {
+      text-align: center;
+      padding: 5px;
+      font-size: 20px;
+      background-color: rgb(199, 199, 245);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="grid-container">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>
+    <div class="item4">4</div>
+    <div class="item5">5</div>
+    <div class="item6">6</div>
+    <div class="item7">7</div>
+    <div class="item8">8</div>
+    <div class="item9">9</div>
+    <div class="item10">10</div>
+    <div class="item11">11</div>
+    <div class="item12">12</div>
+    <div class="item13">13</div>
+    <div class="item14">14</div>
+    <div class="item15">15</div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục Grid</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+}
+
+/* Định dạng các khu vực */
+.header {
+    background-color: #d9534f;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.sidebar {
+    background-color: #f0ad4e;
+    padding: 20px;
+    color: black;
+}
+
+.content {
+    background-color: #5bc0de;
+    padding: 20px;
+    color: black;
+}
+
+.footer {
+    background-color: #5bc0de;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Bố cục cho màn hình từ 1024px trở lên */
+@media (min-width: 1024px) {
+    .container {
+        grid-template-areas: 
+            "header header"
+            "sidebar content"
+            "footer footer";
+        grid-template-columns: 1fr 3fr;
+    }
+    .header {
+        grid-area: header;
+    }
+    .sidebar {
+        grid-area: sidebar;
+    }
+    .content {
+        grid-area: content;
+    }
+    .footer {
+        grid-area: footer;
+    }
+}
+
+/* Bố cục cho màn hình từ 768px đến dưới 1024px */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        grid-template-areas: 
+            "header header"
+            "content content"
+            "sidebar footer";
+        grid-template-columns: 1fr;
+    }
+    .header {
+        grid-area: header;
+    }
+    .sidebar {
+        grid-area: sidebar;
+    }
+    .content {
+        grid-area: content;
+    }
+    .footer {
+        grid-area: footer;
+    }
+}
+
+/* Bố cục cho màn hình dưới 768px */
+@media (max-width: 767px) {
+    .container {
+        grid-template-areas: 
+            "header"
+            "content"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+    .header {
+        grid-area: header;
+    }
+    .content {
+        grid-area: content;
+    }
+    .footer {
+        grid-area: footer;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

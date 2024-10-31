@@ -1,0 +1,161 @@
+<head>
+    <style>
+        p {
+            color: grey;
+            font-size: small;
+        }
+
+        .flex-container {
+            width: 100%;
+        }
+
+        .mh1 {
+            padding-top: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            background-color: rgb(239, 238, 238);
+        }
+
+        .sp1va2 {
+            display: flex;
+            gap: 5px
+        }
+
+        .sp3va4 {
+            display: flex;
+            gap: 5px;
+        }
+
+        .mh2 {
+            padding: 5px;
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            background-color: rgb(239, 238, 238);
+        }
+
+        .sp5va6 {
+            display: flex;
+            gap: 5px;
+        }
+
+        .sp7va8 {
+            display: flex;
+            gap: 5px
+        }
+
+        .item {
+            width: 100%;
+            height: 100px;
+            background-color: white;
+            text-align: center;
+            justify-items: center;
+            justify-content: center;
+        }
+
+        @media screen and(max-width:1024px) {
+            .mh1 {
+                padding-top: 5px;
+                padding-left: 5px;
+                padding-right: 5px;
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+                background-color: rgb(239, 238, 238);
+            }
+
+            .sp1va2 {
+                display: flex;
+                gap: 5px
+            }
+
+            .sp3va4 {
+                display: flex;
+                gap: 5px;
+            }
+
+            .mh2 {
+                padding: 5px;
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+                background-color: rgb(239, 238, 238);
+            }
+
+            .sp5va6 {
+                display: flex;
+                gap: 5px;
+            }
+
+            .sp7va8 {
+                display: flex;
+                gap: 5px
+            }
+        }
+
+        @media screen and (min-width:1024px) {
+            .item {
+                width: 100%;
+            }
+
+            .sp1va2,
+            .sp3va4 {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .sp5va6,
+            .sp7va8 {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="mh1">
+            <div class="sp1va2">
+                <div class="item sp1">Sản phẩm 1
+                    <br>
+                    <p>Mô tả sản phẩm 1</p>
+                </div>
+                <div class="item sp2">Sản phẩm 2
+                    <p>Mô tả sản phẩm 2</p>
+                </div>
+            </div>
+            <div class="sp3va4">
+                <div class="item sp3">Sản phẩm 3
+                    <p>Mô tả sản phẩm 3</p>
+                </div>
+                <div class="item sp4">Sản phẩm 4
+                    <p>Mô tả sản phẩm 4</p>
+                </div>
+            </div>
+        </div>
+        <div class="mh2">
+            <div class="sp5va6">
+                <div class="item sp5">Sản phẩm 5
+                    <p>Mô tả sản phẩm 5</p>
+                </div>
+                <div class="item sp6">Sản phẩm 6
+                    <p>Mô tả sản phẩm 6</p>
+                </div>
+            </div>
+            <div class="sp7va8">
+                <div class="item sp7">Sản phẩm 7
+                    <p>Mô tả sản phẩm 7</p>
+                </div>
+                <div class="item sp8">Sản phẩm 8
+                    <p>Mô tả sản phẩm 8</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

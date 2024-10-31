@@ -1,0 +1,23 @@
+
+
+
+
+
+
+grid container: phần tử cha chứa lưới 
+- display: grid -> full
+- display: inline-grid -> trái trên
+- grid-template-columns: auto auto auto -> tỉ lệ cột
+- grid-template-rows: auto auto auto -> tỉ lệ hàng
+gaps: khoảng trống (gap: 20px 20px)
+    - columns-gap: 20px -> khoảng trống cột 
+    - rows-gap: 20px -> khoảng trống hàng 
+lines: viền nằm giữa các cột và các hàng
+gộp cộp : grid-column: a/b
+    - grid-column-start: gộp cột bắt đầu từ line a
+    - grid-column-end: gộp cột đến line b
+gộp hàng : grid-row: a/b
+    - grid-row-start: gộp cột bắt đầu từ line a
+    - grid-row-end: gộp cột đến line b
+grid-area: khối gộp nhiều hàng nhiều cột
+    [grid-row-start]/[grid-column-start]/[grid-row-end]/[grid-column-end]

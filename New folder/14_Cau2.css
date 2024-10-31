@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffe3;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 30px;
+}
+
+.container {
+  display: flex;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px 40px;
+  gap: 30px;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact_detail {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact_detail i {
+  color: #538fff;
+  font-size: 20px;
+}
+
+.contact_detail h4 {
+  font-size: 16px;
+}
+.contact_detail p {
+  font-size: 13px;
+  color: #888;
+}
+
+.form_messgae {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inf_form h1 {
+  color: #538fff;
+  font-size: 20px;
+}
+
+.inf_form p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.input_form {
+  border: none;
+  background-color: rgb(240, 239, 239);
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn_sendnow {
+  border: none;
+  padding: 10px;
+  max-width: 90px;
+  background-color: #538fff;
+  border-radius: 5px;
+  color: white;
+}

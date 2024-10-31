@@ -1,0 +1,79 @@
+        /* Định dạng body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FAE9FB;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Container chính */
+        .main-container {
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            max-width: 1024px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        /* Container cho hình ảnh */
+        .image-container {
+            flex: 1;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Container cho form */
+        .form-container {
+            flex: 1;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        /* Tiêu đề của form */
+        .form-container h2 {
+            text-align: left;
+            margin-bottom: 20px;
+            color: #BA24C2;
+        }
+
+        /* Định dạng các nhãn và input */
+        .form-group {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .form-group input,
+        .form-group textarea {
+            flex: 2;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #FAE9FB;
+            border-radius: 8px;
+            background-color: #FAE9FB;
+            transition: border-color 0.3s;
+            font-family: Arial;
+            resize:none;
+        }
+
+        /* Định dạng cho nút gửi */
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color:#BA24C2;
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
