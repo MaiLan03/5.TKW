@@ -1,2 +1,2 @@
 .getElementById('') -> gọi id
-
+Ẩn các phần tử HTML có thể được thực hiện bằng cách thay đổi kiểu: display
