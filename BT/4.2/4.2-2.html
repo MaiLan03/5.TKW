@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 2.3-2</title>
+    <style>
+        .container {
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .display {
+            margin-bottom: 20px;
+        }
+        button {
+            margin-right: 10px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+            <p>Họ tên: <span id="name-output">N/A</span></p>
+            <p>Ngày sinh: <span id="dob-output">N/A</span></p>
+        </div>
+        <button onclick="showName()">Họ tên</button>
+        <button onclick="showDob()">Ngày sinh</button>
+    </div>
+
+    <script>
+        function showName() {
+            document.getElementById("name-output").textContent = "Nguyễn Văn A";
+        }
+
+        function showDob() {
+            document.getElementById("dob-output").textContent = "01/01/2000";
+        }
+    </script>
+</body>
+</html>

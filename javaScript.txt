@@ -1,2 +1,191 @@
-.getElementById('') -> gọi id
-Ẩn các phần tử HTML có thể được thực hiện bằng cách thay đổi kiểu: display
+.getElementById('') -> gọi id.
+document.getElementById('demo').style.display=' '. 
+    -> Ẩn hoặc hiện các phần tử HTML có thể được thực hiện bằng cách thay đổi kiểu: display.
+        - 'none': ẩn.
+        - 'block': hiện.
+innerHTNL : viết vào một phần tử HTML.
+document.write() : ghi vào đầu ra HTML.
+    Sử dụng document.write() sau khi tài liệu HTML được tải, sẽ xóa tất cả HTML -> chỉ nên được sử dụng để thử nghiệm.
+window.alert() : viết vào hộp cảnh báo.
+console.log() : ghi vào bảng điều kiến trình duyệt.
+JavaScript không có bất kỳ đối tượng in hoặc phương thức in nào.
+    Bạn không thể truy cập các thiết bị đầu ra từ JavaScript.
+    window.print(): Ngoại lệ duy nhất là bạn có thể gọi phương thức trong trình duyệt để in nội dung của cửa sổ hiện tại.
+Các câu lệnh JavaScript có thể được nhóm lại với nhau trong các khối mã, bên trong xoăn dấu ngoặc {...} ->  xác định các câu lệnh được thực thi cùng nhau.
+
+var : khai báo một biến. var z; -> biến toàn cục, có thể khai báo lại.
+let : khai báo biến khối. let a=1; -> có phạm vi, không thể khai báo lại.
+const : khai báo hằng số khối. const mang=[1,2,3,4,5]; -> có phạm vi ,không thể gán lại.
+Sử dụng khi bạn khai báo: const
+    Một mảng mới
+    Một đối tượng mới
+    Một chức năng mới
+    Một RegExp mới
+        var x = 10;
+        let y = 5;
+        const z = 1;
+        // Here x = 10
+        // Here y = 5
+        // Here z =1
+        {
+        var x = 2;
+        let y = 3;
+        const z = 8;
+        // Here x is 2
+        // Here y is 3
+        // Here z = 8
+        }
+        // Here x is 2
+        // Here y is 5
+        // Here z = 1
+Khi nào nên sử dụng var, let, hoặc const
+    1. Luôn khai báo các biến
+    2. Luôn sử dụng nếu không nên thay đổi giá trị: const
+    3. Luôn sử dụng nếu không nên thay đổi kiểu (Mảng và Đối tượng): const
+    4. Chỉ sử dụng nếu bạn không thể sử dụng: let, const
+    5. Chỉ sử dụng nếu bạn PHẢI hỗ trợ các trình duyệt cũ: var
+
+if : đánh dấu một khối các lệnh sẽ thực thi với điều kiện.
+switch : đánh dấu một khối các tuyên bố sẽ được thực hiện trong các trường hợp khác nhau.
+for : đánh dấu một khối các câu lệnh sẽ được thực thi trong một vòng lặp.
+funtion : khai báo một hàm.
+return : thoát hàm.
+try : thực hiện xử lý lỗi cho một khối câu lệnh.
+
+//,/* */ : comment
+Tên JavaScript phải bắt đầu bằng: (camelCase)
+    Một chữ cái (A-Z hoặc a-z)
+    Một ký hiệu đô la ($)
+    Hoặc dấu gạch dưới (_)
+Tất cả các định danh JavaScript đều phân biệt chữ hoa chữ thường.
+
+JavaScript có 8 loại kiểu dữ liệu:
+    String
+    Number
+    Bigint
+    Boolean
+    Undefined
+    Null
+    Symbol
+    Object
+
+**Hàm: 
+function nameF(parameter1, parameter2, parameter3) {
+  // code to be executed
+  return ..;
+}
+nameF();
+
+**Đối tượng: Object
+    vd: xe hơi 
+    - thuộc tính(đặc tính)  car.name= A; 
+    - phương pháp(methol) car.start()
+    const car = {type:"Fiat", model:"500", color:"white"}; -> nhiều thuộc tính.
+Objects là container cho Properties và Methods.
+    Thuộc tính được đặt tên là Giá trị.
+    Phương thức là các hàm được lưu trữ dưới dạng Thuộc tính.
+    Thuộc tính có thể là các giá trị nguyên thủy, hàm hoặc thậm chí các đối tượng khác.
+để xác định một đối tượng JavaScript
+    Sử dụng một đối tượng theo nghĩa đen
+    Sử dụng từ khóa : new  - const car = new Object();
+    Sử dụng hàm tạo đối tượng
+Bạn có thể truy cập thuộc tính đối tượng theo hai cách:
+    objectName.propertyName
+    objectName["propertyName"]
+"";           // primitive string
+0;            // primitive number
+false;        // primitive boolean
+
+{};           // object object
+[];           // array object
+/()/          // regexp object
+function(){}; // function
+
+onchange    : Một phần tử HTML đã được thay đổi
+onclick     : Người dùng nhấp vào một phần tử HTML
+onmouseover : Người dùng di chuyển chuột qua một phần tử HTML
+onmouseout  : Người dùng di chuyển chuột ra khỏi phần tử HTML
+onkeydown   : Người dùng nhấn phím bàn phím
+onload      : Trình duyệt đã tải xong trang
+
+' -> \'	Single quote
+" -> \"	Double quote
+\ -> \\	Backslash
+
+\b	Backspace(cách)
+\f	Form Feed()
+\n	New Line(xuống dòng)
+\r	Carriage Return ()
+\t	Horizontal Tabulator ()
+\v	Vertical Tabulator ()
+
+
+mang.pop() -> xóa phần tử cuối cùng
+mang.push("A"); -> thêm A vào cuối mang
+txt = txt.replace("a", "b"); -> thay a bằng b
+
+
+**String: Chuỗi
+txt.toString() -> chuyển thành chuỗi.
+x = st.length; -> độ dài chuỗi.
+
+Trích xuất các ký tự chuỗi: số chỉ mục từ 0; tính luôn khoảng trắng.
+    - txt.charAt(số chỉ mục); -> trả về ký tự tại một chỉ mục trong chuỗi.Nếu index nằm ngoài phạm vi (âm hoặc lớn hơn độ dài chuỗi), trả về "" (chuỗi rỗng). <Không tính index âm>
+    - txt.charCodeAt(số chỉ mục); -> trả về mã UTF-16 của ký tự tại chỉ mục trong chuỗi.
+    - txt.at(số chỉ mục); -> trả về ký tự tại một chỉ mục (vị trí) được chỉ định trong một chuỗi. Nếu index nằm ngoài phạm vi, trả về "undefined".
+    - txt.[số chỉ mục] -> chuỗi trông giống như các mảng. trả về undefined khi không tìm thấy ký tự nào. txt[0] = "A" không có lỗi (nhưng không hoạt động!)
+
+txt.slice(); ->trích xuất một phần của chuỗi và trả về trích xuất một phần trong một chuỗi mới. 
+    x = txt.slice(x, y); -> lấy ký tự chỉ mục thứ x đến y (không tính y)
+    txt.slice(x); -> lấy ký tự chỉ mục thứ x đến hết.
+txt.substring(); <txt="Hello">
+    - txt.substring(-2,0); -> không in ra gì
+    - txt.substring(x) ->   x<=0: không in ra gì
+                            x>0: index bắt đầu = 1 và in ra thiếu kí tự vị trí x.
+    - txt.substring(a,b) -> a,b >0: index bắt đầu = 0 và in ra chuỗi từ a đến b-1.
+        a,b<=0: không in gì hết.
+        a or b<=0: in ra chuỗi từ a(a<=0) đến b(b>0)-1.
+
+txt.substr(a,b); -> in ra chuỗi có b kí tự và bắt đầu từ vị trí index = a
+    ko có b thì in ra chuỗi từ a đến cuối.
+
+txt.toUpperCase(); -> chuỗi được chuyển đổi thành chữ hoa.
+txt.toLowerCase() -> chuỗi được chuyển đổi thành chữ thường.
+String concat() -> hai hoặc nhiều chuỗi.
+String trim() -> loại bỏ khoảng trắng từ cả hai bên của chuỗi.
+String trimStart() -> chỉ loại bỏ khoảng trắng từ đầu chuỗi.
+String trimEnd() -> chỉ loại bỏ khoảng trắng từ cuối chuỗi.
+String padStart(4,"a") -> đệm một chuỗi a ngay từ đầu đến khi chuỗi có độ dài = 4. không được hỗ trợ trong Internet Explorer.
+String padEnd(4,"a") -> đệm một chuỗi a ngay cuối đến khi chuỗi có độ dài = 4. không được hỗ trợ trong Internet Explorer.
+String repeat(x) -> trả về một chuỗi với một số bản sao của một chuỗi.  không được hỗ trợ trong Internet Explorer. <trả về chuỗi và x-1 bản sao của chuỗi>.
+String replace("a","b") -> thay thế một giá trị được chỉ định bằng một giá trị khác giá trị trong một chuỗi. <chỉ thay thế kết quả phù hợp đầu tiên> b thay a. 
+    Để thay thế phân biệt chữ hoa chữ thường, hãy sử dụng biểu thức chính quy có cờ :/i
+        let text = "Please visit Microsoft!";
+        let newText = text.replace(/MICROSOFT/i, "W3Schools");
+        -> Please visit W3Schools!
+    Để thay thế tất cả các kết quả trùng khớp, hãy sử dụng biểu thức chính quy bằng cờ (đối sánh toàn cục):/g
+        let text = "Please visit Microsoft and Microsoft!";
+        let newText = text.replace(/Microsoft/g, "W3Schools");
+        -> Please visit W3Schools and W3Schools!
+
+txt.replaceAll()
+
+txt.split() -> chuỗi có thể được chuyển đổi thành một mảng
+    Nếu dấu phân cách bị bỏ qua, mảng trả về sẽ chứa toàn bộ chuỗi trong chỉ mục [0].
+    Nếu dấu phân cách là "", mảng trả về sẽ là một mảng đơn Ký tự
+
+String indexOf() ->  trả về chỉ mục (position) lần xuất hiện đầu tiên của một chuỗi trong một chuỗi, hoặc nó trả về -1 nếu không tìm thấy chuỗi. chấp nhận tham số thứ hai làm vị trí bắt đầu cho tìm kiếm.
+
+String lastIndexOf() -> trả về chỉ mục của lần xuất hiện cuối cùng của một văn bản được chỉ định trong một chuỗi, hoặc nó trả về -1 nếu không tìm thấy. chấp nhận tham số thứ hai làm vị trí bắt đầu cho tìm kiếm.
+String search() -> tìm kiếm một chuỗi cho một chuỗi.
+
+
+String match()
+String matchAll()
+String includes()
+String startsWith()
+String endsWith()
+
+
+**Mảng: List
+
