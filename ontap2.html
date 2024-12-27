@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h5>Link chuyển trang</h5>
+    <a href="url" target="value">...</a>
+    <h5>Ảnh</h5>
+    <img src="url_pic" alt="value" width="value" height="value">
+    <h5>Placeholder</h5>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname" placeholder="Enter your first name here ...">
+    <h5>Password</h5>
+    <label for="pwd">Password:</label>
+    <input type="password" id="pwd" name="pwd">
+    <h5>Email type</h5>
+    <form>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email">
+        <input type="submit" value="Send">
+    </form>
+    <h5>Tel</h5>
+    <form>
+        <label>Enter your phone: </label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+        <input type="submit" value="Submit">
+    </form>
+    <h5>Required</h5>
+    <form>
+        <label for="your_name">Your name:</label><br>
+        <input type="text" id="your_name" name="your_name" required minlength="20" maxlength="100"><br>
+        <label for="your_phone">Your phone:</label><br>
+        <input type="tel" id="your_phone" name="your_phone" required minlength="10" maxlength="10"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h5>Checkbox type</h5>
+    <input type="checkbox" id="dog" name="dog" value="Dog">
+    <label for="dog">I like dogs</label>
+    <input type="checkbox" id="cat" name="cat" value="Cat">
+    <label for="cat">I like cats</label>
+    <h5>Radio type và thuộc tính checked</h5>
+    <input type="radio" id="light" name="theme" value="Light" checked>
+    <label for="light">Light</label>
+    <input type="radio" id="dark" name="theme" value="Dark">
+    <label for="dark">Dark</label>
+    <h5>Thẻ fieldset và thẻ legend</h5>
+    <fieldset id="sex">
+        <legend>Sex</legend>
+        <input type="radio" value="male" name="sex" checked> Male
+        <input type="radio" value="female" name="sex"> Female
+    </fieldset>
+
+    <h5>Date type</h5>
+    <label for="dob">Date of birth:</label>
+    <input type="date" id="dob" name="date of birth">
+
+    <h5>Datetime-local type:</h5>
+    <label for="birthdaytime">Birthday (date and time):</label>
+    <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+
+    <h5>Time type</h5>
+    <label for="appt">Select a time:</label>
+    <input type="time" id="appt" name="appt">
+
+    <h5>File type và thuộc tính multiple</h5>
+    <label for="myfile">Select a file:</label>
+    <input type="file" id="myfile" name="myfile">
+    <h5>Image type</h5>
+    <input type="image" src="BuyNow.jpg" alt="Buy Now">
+    <h5>Number type</h5>
+    <input type="number" id="quantity" name="quantity" min="1" max="5">
+    <h5>Volume</h5>
+    <label for="volume">Volume:</label>
+    <input type="range" id="volume" name="volume" min="0" max="10" step="1">
+    <h5>Datalist</h5>
+    <label for="browser">Choose from the list:</label>
+    <input list="browsers" name="browser" id="browser">
+    <datalist id="browsers">
+        <option value="Edge">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+
+    <h5>Select</h5>
+    <label for="browser">Choose from the list:</label><br>
+    <select id="browser" name="browser">
+        <option value="Edge">Edge</option>
+        <option value="Firefox">Firefox</option>
+        <option value="Chrome">Chrome</option>
+        <option value="Opera">Opera</option>
+        <option value="Safari">Safari</option>
+    </select>
+</body></html>

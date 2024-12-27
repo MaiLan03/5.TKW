@@ -64,3 +64,4 @@ do{
    i+=2;
 }while (i<=n);
 console.log("Tong = " + s)*/
+

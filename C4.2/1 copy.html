@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Selector</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            margin: 20px;
+            align-items: center;
+        }
+
+        button {
+            background-color: crimson;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(239, 231, 15);
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        img {
+            align-items: center;
+            text-align: center;
+            margin-top: 20px;
+            max-width: 80%;
+            border: 5px solid crimson;
+            border-radius: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <img id="city-image" src="" alt="City">
+    <button onclick="showCity('img/hanoi.png')">Hà Nội</button>
+    <button onclick="showCity('img/hue.png')">Huế</button>
+    <button onclick="showCity('img/danang.png')">Đà Nẵng</button>
+    <script>
+    showCity = (imageUrl)=>{
+            const imageElement = document.getElementById('city-image');
+            imageElement.src = imageUrl;
+            imageElement.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

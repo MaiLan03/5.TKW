@@ -1,0 +1,46 @@
+form{
+    border: 1px solid grey;
+    width:500px;
+    height:400px;
+    text-align: center;
+}
+.image-gg{
+    
+    width:20%;
+    
+}
+img{
+    padding-top:30px;
+    text-align:center;
+}
+.title-form{
+    padding-top:20px ;
+}
+.label{
+    padding:10px 40px;
+}
+#email,.form-btn{
+    width:400px;
+}
+input{
+    padding: 10px;
+    margin:10px;
+}
+.form-btn{
+    display:flex;
+    padding:0 20px;
+    justify-content: space-between;
+}
+.btn{
+    padding-top:20px;
+    width:200px;
+    
+}
+.btn>a{
+    padding:10px;
+    color: blue;
+    text-decoration: none;
+    border-radius: 5px;
+    border:1px solid grey;
+    padding: 10px 40px;
+}

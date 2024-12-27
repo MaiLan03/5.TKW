@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai6</title>
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+        }
+        button {
+            text-align: center;
+            color: white;
+            background-color: green;
+            border: none; 
+            padding: 10px 20px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Nhấn nút để thay đổi màu nền trang</h1>
+    <button id="DoiMau">Thay đổi màu nền</button>
+    <script>
+        function ThayMauNen() {
+            const colors = ["#ff5733", "#33ff57", "#ff33a1", "#ffff33", "#33ffff"];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+        document.getElementById("DoiMau").onclick = ThayMauNen;
+    </script>
+</body>
+</html>

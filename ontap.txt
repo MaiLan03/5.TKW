@@ -1,0 +1,132 @@
+**JavaScript**
+Mỗi câu lệnh kết thúc bằng dấu chấm phẩy ; (không bắt buộc);
+Khối lệnh được đặt trong cặp dấu { } ;
+Tên định danh và từ khóa có phân biệt chữ hoa, chữ thường;
+Sử dụng cặp dấu // hoặc /* */ để tạo ghi chú (Comment).
+
+
+
+*Xuất kết quả trong JavaScript
+-   InternalHTML: viết vào một phần tử HTML.
+<p id="demo"></p>
+<script>
+    document.getElementById("demo").innerHTML = 5 + 6;
+</script>
+
+-   document.write(): viết trực tiếp lên màn hình.
+<button type="button" onclick="document.write(5 + 6)">
+    Try it
+</button>
+
+-   window.alert(): viết vào hộp cảnh báo
+<script>
+    window.alert(5 + 6);
+</script>
+
+-   console.log(): viết vào bảng điều khiển trình duyệt
+<script>
+    console.log(5 + 6);
+</script>
+
+
+
+
+*Cấu trúc điều kiện:
+Dạng 1:
+if (hour < 18) {
+greeting = "Good day";
+}
+
+Dạng 2
+if (hour < 18) {
+greeting = "Good day";
+}
+else {
+greeting = "Good evening";
+}
+
+Dạng 3
+if (time < 10) {
+greeting = "Good morning";
+}
+else if (time < 20) {
+greeting = "Good day";
+}
+else {
+greeting = "Good evening";
+}
+
+
+*Cấu trúc lặp:
+**For
+Dạng 1:
+for (expression 1; expression 2; expression 3) {
+// code block to be executed
+}
+
+Ví dụ 1: in lên màn hình dãy thông báo theo mẫu
+for (let i = 0; i < 5; i++) {
+    text = "The number is " + i;
+    console.log(text);
+}
+The number is 0
+The number is 1
+The number is 2
+The number is 3
+The number is 4
+
+Dạng 2:
+Ví dụ: in lên màn hình tổng giá trị các phần tử trong một mảng
+for (key in object) {
+    // code block to be executed
+} // key nhận về giá trị index của object
+
+const numbers = [45, 4, 9, 16, 25];
+let n = 0;
+for (let x in numbers) {
+    n += numbers[x];
+}
+console.log(n)
+
+**While:
+while (condition) {
+    // code block to be executed
+}
+Ví dụ: in lên màn hình dãy thông báo theo mẫu
+let i=1;
+while (i < 10) {
+    console.log("The number is " + i);
+    i++;
+}
+
+**do...while:
+do {
+    // code block to be executed
+}
+while (condition);
+
+Ví dụ: in lên màn hình dãy thông báo theo mẫu
+let i=0;
+do {
+    text = "The number is " + i;
+    console.log(text);
+    i++;
+}
+while (i < 10);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

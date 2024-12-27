@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover City Selector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        #city-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #city-list li {
+            font-size: 20px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+        #city-list li:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        #city-info {
+            text-align: center;
+            border: 3px solid transparent;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        #city-info img {
+            max-width: 300px;
+            max-height: 200px;
+            border: 3px solid blue;
+            border-radius: 10px;
+        }
+
+        #city-info p {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <ul id="city-list">
+        <li onmouseover="showCity('hanoi')">Hà Nội</li>
+        <li onmouseover="showCity('hue')">Huế</li>
+        <li onmouseover="showCity('danang')">Đà Nẵng</li>
+        <li onmouseover="showCity('hcm')">TP. HCM</li>
+    </ul>
+
+    <div id="city-info">
+        <img id="city-image" src="" alt="City Image" style="display: none;">
+        <p id="city-name"></p>
+    </div>
+
+    <script>
+        function showCity(city) {
+            const imageElement = document.getElementById('city-image');
+            const nameElement = document.getElementById('city-name');
+
+            let cityData = {
+                hanoi: { img: 'img/hanoi.png', name: 'Thủ Đô Hà Nội' },
+                hue: { img: 'img/hue.png', name: 'Huế' },
+                danang: { img: 'img/danang.png', name: 'Thành Phố Đà Nẵng' },
+                hcm: { img: 'img/hcm.png', name: 'Thành Phố Hồ Chí Minh' }
+            };
+
+            if (cityData[city]) {
+                imageElement.src = cityData[city].img;
+                imageElement.style.display = 'block';
+                nameElement.textContent = cityData[city].name;
+            }
+        }
+    </script>
+</body>
+</html>

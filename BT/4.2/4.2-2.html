@@ -21,20 +21,20 @@
 <body>
     <div class="container">
         <div class="display">
-            <p>Họ tên: <span id="name-output">N/A</span></p>
-            <p>Ngày sinh: <span id="dob-output">N/A</span></p>
+            <p>Họ tên: <span id="name">N/A</span></p>
+            <p>Ngày sinh: <span id="date">N/A</span></p>
         </div>
         <button onclick="showName()">Họ tên</button>
-        <button onclick="showDob()">Ngày sinh</button>
+        <button onclick="showDate()">Ngày sinh</button>
     </div>
 
     <script>
-        function showName() {
-            document.getElementById("name-output").textContent = "Nguyễn Văn A";
+        showName=() =>{
+            document.getElementById("name").textContent = "Nguyễn Mai Lan";
         }
 
-        function showDob() {
-            document.getElementById("dob-output").textContent = "01/01/2000";
+        showDate=() =>{
+            document.getElementById("date").textContent = "09/12/2003";
         }
     </script>
 </body>

@@ -7,7 +7,7 @@ for (let i=1;i<=n;i++){
 // for (let i=1;i<=n;i++){
 //     console.log("5x"+i+"="+5*i)
 // }
-
+ 
 const ten  =[]
 for(let i=0;i<ten.length;i++){
     console.log(ten[i])

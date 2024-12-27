@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Size Adjuster</title>
+    <style>
+    </style>
+</head>
+<body>
+    <p id="text">Hello world!!!</p>
+    <button onclick="FontSize(1)">Tăng cỡ chữ</button>
+    <button onclick="FontSize(-1)">Giảm cỡ chữ</button>
+
+    <script>
+        function FontSize(change) {
+            const textElement = document.getElementById('text');
+            const currentSize = parseInt(window.getComputedStyle(textElement).fontSize);
+            const newSize = currentSize + change;
+            if (newSize >= 1 && newSize <= 500) {
+                textElement.style.fontSize = newSize + 'px';
+            }
+        }
+    </script>
+</body>
+</html>
+

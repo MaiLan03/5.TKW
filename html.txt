@@ -1,6 +1,106 @@
+- Thẻ <header> Chứa những thông tin giới thiệu về trang web hoặc thanh điều hướng. Một trang web có thể có nhiều thẻ <header>;
+- Thẻ <footer> Chứa những thông tin về thông tin liên hệ, thông tin bản quyền,... Một trang web có thể có nhiều thẻ <footer>;
+- Thẻ <main> Chứa nội dung chính của trang. Một trang web chỉ có 1 thẻ <main>;
+- Thẻ <nav> Dùng để chứa liên kết, nhằm điều hướng người dùng đến những nội dung chính của website;
+- Thẻ <section> Dùng để phân chia các phần riêng biệt của - trang HTML;
+- Thẻ <article> Dùng để chứa các nội dung độc lập trong trang, không phụ thuộc vào nội dung chứa trong trang;
+- Thẻ <aside> Chứa thông tin phụ của trang, nội dung có thể bị xóa đi mà không làm ảnh hưởng đến nội dung chính của trang;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>...</title>
+</head>
+<body>
+    <header>
+        <nav>...</nav>
+    </header>
+    <main>
+        <article>
+            <header>
+                ...
+            </header>
+            <aside>
+                ...
+            </aside>
+        </article>
+    </main>
+    <footer>
+        ...
+    </footer>
+</body>
+</html>
 
 
+**<li>
+<ul>	Tạo một danh sách không có thứ tự
+<ol>	Tạo một danh sách có thứ tự
 
+
+**NHÓM THẺ TABLE:
+<table> … </table>: định nghĩa cấu trúc bảng;
+<caption> … </caption>: định nghĩa tên cho bảng;
+<th> … </th>: định nghĩa 1 tiêu đề cột (table headers);
+<tr> … </tr>: định nghĩa 1 dòng (table rows);
+<td> … </td>: định nghĩa 1 ô (table data);
+<thead> ... </thead>: nhóm các thẻ làm tiêu đề cho bảng;
+<tbody> ... </tbody>: nhóm các thẻ là phần nội dung chính của bảng;
+<tfoot> ... </tfoot>: nhóm các thẻ làm phần chân cho bảng;
+
+Border: thiết lập đường viền;
+Width: độ rộng;
+Colspan: gộp nhiều ô liền kề thành 1 cột;
+Rowspan: gộp nhiều ô liền kề thành 1 dòng;
+
+
+**NHÓM THẺ FROMS:
+<form>...</form> :	Khởi tạo 1 form nhập liệu
+<button>...</button> :	Định nghĩa nút lệnh (button)
+<label>...</label> :	Định nghĩa một nhãn thông tin
+<input type="value"> :	Định nghĩa một đối tượng nhập liệu, kiểu đối tượng tùy theo giá trị của thuộc tính type
+
+Thuộc tính action
+– action="url"
+Thuộc tính method
+– method="post"
+– method="get"
+<form action="/doAction" method="post">
+...
+    <button type="submit">Submit</button>
+</form>
+
+value: Thiết lập giá trị của đối tượng
+min, max: Thiết lập giá trị nhỏ nhất và lớn nhất
+minlenght,maxlenght: Thiết lập chiều dài tối thiểu và tối đa của giá trị văn bản.
+required: Trường yêu cầu nhập liệu
+step: Dùng với thẻ input, thiết lập giá trị bước nhảy
+rows, cols: Dùng với thẻ textarea, thiết lập số dòng, số cột tối đa.
+checked: Dùng với thẻ input, thiết lập giá trị mặc định được chọn.
+
+* thẻ INPUT: <input type="button" value="button_name" onclick = "function_onclick_event()" id="id_of_input" name="name_of_input">
+Button: Nút lệnh tùy chọn
+Submit: Nút lệnh submit
+Reset: Nút lệnh khởi tạo dữ liệu
+Text: Hộp nhập văn bản đơn dòng
+Password: Hộp nhập mật khẩu
+Email: Hộp nhập địa chỉ email
+Tel: Hộp nhập số điện thoại
+URL: Hộp nhập địa chỉ web
+Checkbox: Hộp chọn nhiều trong nhiều
+Radio: Hộp chọn 1 trong nhiều
+Date: Hộp chọn kiểu ngày tháng năm
+Datetime-local: Hộp chọn kiểu ngày tháng năm + giờ phút
+Time: Hộp chọn kiểu giờ phút
+File: Hộp chọn file
+Image: Hiển thị hình ảnh
+Number: Hộp nhập liệu giá trị số từ bàn phím
+Range: Hộp nhập liệu kiểu số bằng thanh cuộn
+
+Text type:
+– Thuộc tính readonly, placeholder
+❑ Password type:
+<label for="pwd">Password:</label>
+<input type="password" id="pwd" name="pwd">
 
 
 
@@ -21,3 +121,4 @@ gộp hàng : grid-row: a/b
     - grid-row-end: gộp cột đến line b
 grid-area: khối gộp nhiều hàng nhiều cột
     [grid-row-start]/[grid-column-start]/[grid-row-end]/[grid-column-end]
+    

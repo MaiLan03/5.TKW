@@ -13,6 +13,150 @@ JavaScript không có bất kỳ đối tượng in hoặc phương thức in n�
     window.print(): Ngoại lệ duy nhất là bạn có thể gọi phương thức trong trình duyệt để in nội dung của cửa sổ hiện tại.
 Các câu lệnh JavaScript có thể được nhóm lại với nhau trong các khối mã, bên trong xoăn dấu ngoặc {...} ->  xác định các câu lệnh được thực thi cùng nhau.
 
+-document.getElementById("id...").innerHTML="Hello!!!"
+
+document.getElementById(id): tìm theo tên id
+document.getElementsByTagName(name)[num]: tìm theo tên thẻ thành phần name
+document.getElementsByClassName(name)[num]: tìm theo tên class name
+onchange    : Một phần tử HTML đã được thay đổi
+onclick     : Người dùng nhấp vào một phần tử HTML
+onmouseover : Người dùng di chuyển chuột qua một phần tử HTML
+onmouseout  : Người dùng di chuyển chuột ra khỏi phần tử HTML
+onkeydown   : Người dùng nhấn phím bàn phím
+onload      : Trình duyệt đã tải xong trang
+
+<button type="button" onclick=alert('Hello!!!')>Click me</button>
+
+<img src="pic.png" width="200px" onmouseover="alert('vừa mới đưa chuột lên hình')"> </img>
+
+<input id="txt" onkeydown=document.getElementById('hienthi'.innerHTML=documenr.getElementById('txt').value">
+
+
+<head>
+  <script>
+    function showTime() {
+      document.getElementById('showTimeHere').innerHTML = Date();
+    }
+  </script>
+</head>
+<body>
+  <button onclick="showTime()">The time is?</button>
+  <p id="showTimeHere"></p>
+</body>
+
+
+
+<body>
+  <button onclick="showTime()">The time is?</button>
+  <p id="showTimeHere"></p>
+  <script>
+    function showTime() {
+      document.getElementById("showTimeHere").innerHTML = Date();
+    }
+  </script>
+</body>
+
+
+<h2>Example 8: Display the current date and time</h2>
+<p id="whattime">Mấy giờ rồi?</p>
+<button onclick="displayDateTime()">Xem giờ</button>
+
+<script>
+function displayDateTime() {
+  document.getElementById("whattime").innerHTML = new Date();
+}
+</script>
+
+
+<h2>Example 9: Change image source</h2>
+<button onclick="turnOn()">Bật đèn</button>
+<button onclick="turnOff()">Tắt đèn</button>
+<br><br>
+<img id="BongDen" src="pic_off.gif" alt="Bóng đèn">
+
+<script>
+function turnOn() {
+  document.getElementById("BongDen").src = "pic_on.gif";
+}
+function turnOff() {
+  document.getElementById("BongDen").src = "pic_off.gif";
+}
+</script>
+
+
+
+
+
+' -> \'	Single quote
+" -> \"	Double quote
+\ -> \\	Backslash
+
+\b	Backspace(cách)
+\f	Form Feed()
+\n	New Line(xuống dòng)
+\r	Carriage Return ()
+\t	Horizontal Tabulator ()
+\v	Vertical Tabulator ()
+
+\b Backspace(cách)
+\f Nguồn cấp dữ liệu biểu mẫu()
+\n Dòng Mới(xuống dòng)
+\r Trả lại vận chuyển ()
+\t Trình lập bảng ngang ()
+\v Trình lập bảng dọc ()
+
+
+
+
+**Hàm: 
+function nameF(parameter1, parameter2, parameter3) {
+  // code to be executed
+  return ..;
+}
+nameF();
+
+function nameF=()=>{
+
+    return ..;
+}
+
+
+*Xuất kết quả trong JavaScript
+-   InternalHTML: viết vào một phần tử HTML.
+<p id="demo"></p>
+<script>
+    document.getElementById("demo").innerHTML = 5 + 6;
+</script>
+
+-   document.write(): viết trực tiếp lên màn hình.
+<button type="button" onclick="document.write(5 + 6)">
+    Try it
+</button>
+
+-   window.alert(): viết vào hộp cảnh báo
+<script>
+    window.alert(5 + 6);
+</script>
+
+-   console.log(): viết vào bảng điều khiển trình duyệt
+<script>
+    console.log(5 + 6);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var : khai báo một biến. var z; -> biến toàn cục, có thể khai báo lại.
 let : khai báo biến khối. let a=1; -> có phạm vi, không thể khai báo lại.
 const : khai báo hằng số khối. const mang=[1,2,3,4,5]; -> có phạm vi ,không thể gán lại.
@@ -69,12 +213,7 @@ JavaScript có 8 loại kiểu dữ liệu:
     Symbol
     Object
 
-**Hàm: 
-function nameF(parameter1, parameter2, parameter3) {
-  // code to be executed
-  return ..;
-}
-nameF();
+
 
 **Đối tượng: Object
     vd: xe hơi 
@@ -101,23 +240,7 @@ false;        // primitive boolean
 /()/          // regexp object
 function(){}; // function
 
-onchange    : Một phần tử HTML đã được thay đổi
-onclick     : Người dùng nhấp vào một phần tử HTML
-onmouseover : Người dùng di chuyển chuột qua một phần tử HTML
-onmouseout  : Người dùng di chuyển chuột ra khỏi phần tử HTML
-onkeydown   : Người dùng nhấn phím bàn phím
-onload      : Trình duyệt đã tải xong trang
 
-' -> \'	Single quote
-" -> \"	Double quote
-\ -> \\	Backslash
-
-\b	Backspace(cách)
-\f	Form Feed()
-\n	New Line(xuống dòng)
-\r	Carriage Return ()
-\t	Horizontal Tabulator ()
-\v	Vertical Tabulator ()
 
 
 mang.pop() -> xóa phần tử cuối cùng

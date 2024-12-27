@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div>
+        <button onclick="showTime()">The time is?</button>
+        <p id="showTimeHere"></p>
+        <script>
+            function showTime() {
+                document.getElementById("showTimeHere").innerHTML = Date();
+            }
+        </script>
+    </div>
+
+    <div>
+        <h2>VD8 - Display the current date and time</h2>
+        <p id="whattime">Mấy giờ rồi?</p>
+        <button onclick="displayDateTime()">Xem giờ</button>
+        <script>
+            function displayDateTime() {
+                document.getElementById("whattime").innerHTML = new Date();
+            }
+        </script>
+    </div>
+
+    <div>
+        <h2>VD9 - Change image source</h2>
+        <button onclick="turnOn()">Bật đèn</button>
+        <button onclick="turnOff()">Tắt đèn</button>
+        <br><br>
+        <img id="BongDen" src="pic_off.gif" alt="Bóng đèn">
+
+        <script>
+            function turnOn() {
+                document.getElementById("BongDen").src = "pic_on.gif";
+            }
+
+            function turnOff() {
+                document.getElementById("BongDen").src = "pic_off.gif";
+            }
+        </script>
+    </div>
+
+    <div>
+        <h2>VD10-tagname</h2>
+        <script>
+            function on_click() {
+                document.getElementsByTagName("p")[0].innerHTML = "Dòng một đã được thay đổi";
+            }
+        </script>
+
+        <button onclick="on_click()">Click here</button>
+        <p>Dòng Một</p>
+        <p>Dòng Hai</p>
+    </div>
+
+    <div>
+        <script>
+            function myFunction() {
+                var x = document.getElementsByTagName("LI");
+                document.getElementById("demo1").innerHTML = x[2].innerHTML;
+            }
+        </script>
+        <h2>VD11 - Thực đơn:</h2>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+        <button onclick="myFunction()">Click here</button>
+        <p id="demo1"></p>
+    </div>
+
+    <div>
+        <h2>VD12</h2>
+        <script>
+            function on_click() {
+                document.getElementsByClassName("row1")[0].innerHTML = "Dòng một đã được thay đổi";
+            }
+        </script>
+        <button onclick="on_click()">Click here</button>
+        <p class="row1">Dòng Một</p>
+        <p class="row2">Dòng Hai</p>
+    </div>
+    
+    <div>
+        <h2>VD13</h2>
+        <p id="demo">Hello World!</p>
+        <script>
+            document.getElementById("demo").style.textAlign = "center";
+        </script>
+    </div>
+
+    <div>
+        <h2>VD14</h2>
+        <script>
+            function myFunction() {
+                document.getElementById("row2").style.color = "Red";
+                document.getElementById("row2").style.fontFamily = "Arial";
+                document.getElementById("row2").style.fontSize = "30px";
+            }
+        </script>
+        <p id="row1">Hello World!</p>
+        <p id="row2" onclick="myFunction()">Hello World!</p>
+    </div>
+
+
+
+
+
+
+</body></html>

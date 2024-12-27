@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Selector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        #city-buttons button {
+            background-color: crimson;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        #city-buttons button:hover {
+            opacity: 0.8;
+        }
+
+        #city-image-container {
+            margin-top: 20px;
+        }
+
+        #city-image {
+            max-width: 80%;
+            border: 5px solid crimson;
+            border-radius: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chọn Thành Phố</h1>
+    <div id="city-buttons">
+        <button onclick="showCity('hanoi')">Hà Nội</button>
+        <button onclick="showCity('hue')">Huế</button>
+        <button onclick="showCity('danang')">Đà Nẵng</button>
+    </div>
+    <div id="city-image-container">
+        <img id="city-image" src="" alt="City">
+    </div>
+
+    <script>
+        function showCity(city) {
+            const imageElement = document.getElementById('city-image');
+            let imageUrl = '';
+
+            // Cập nhật URL hình ảnh tương ứng với thành phố
+            if (city === 'hanoi') {
+                imageUrl='img/hanoi.png'; // Đường dẫn ảnh Hà Nội
+            } else if (city === 'hue') {
+                imageUrl = 'img/hue.png'; // Đường dẫn ảnh Huế
+            } else if (city === 'danang') {
+                imageUrl = 'img/danang.png'; // Đường dẫn ảnh Đà Nẵng
+            }
+
+            if (imageUrl) {
+                imageElement.src = imageUrl;
+                imageElement.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

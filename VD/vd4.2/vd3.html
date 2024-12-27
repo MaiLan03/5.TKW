@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.3-1</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .form-group {
+            margin: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+        .output {
+            margin-left: 20px;
+        }
+        .output span {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div class="form-group">
+                <label for="name">Họ tên:</label>
+                <input type="text" id="name" oninput="updateOutput('name', this.value)">
+            </div>
+            <div class="form-group">
+                <label for="date">Ngày sinh:</label>
+                <input type="text" id="date" oninput="updateOutput('date', this.value)">
+            </div>
+            <div class="form-group">
+                <label for="gender">Giới tính:</label>
+                <input type="text" id="gender" oninput="updateOutput('gender', this.value)">
+            </div>
+        </div>
+        <div class="output">
+            <span>Họ tên: <span id="output-name">__________</span></span>
+            <span>Ngày sinh: <span id="output-date">__________</span></span>
+            <span>Giới tính: <span id="output-gender">__________</span></span>
+        </div>
+    </div>
+    <script>
+        function updateOutput(field, value) {
+            document.getElementById(`output-${field}`).textContent = value || "__________";
+        }
+
+    </script>
+</body>
+</html>
+

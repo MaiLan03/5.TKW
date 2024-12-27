@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Hover</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 50px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            font-size: 20px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+        li:hover {
+            color: blue;
+        }
+
+        #city-display {
+            text-align: center;
+            display: none;
+            border: 3px solid blue;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #city-image {
+            max-width: 300px;
+            max-height: 200px;
+        }
+
+        #city-name {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li onmouseover="showCity('hanoi', 'Thủ Đô Hà Nội')">Hà Nội</li>
+        <li onmouseover="showCity('hue', 'Huế')">Huế</li>
+        <li onmouseover="showCity('danang', 'Thành Phố Đà Nẵng')">Đà Nẵng</li>
+        <li onmouseover="showCity('hcm', 'Thành Phố Hồ Chí Minh')">TP. HCM</li>
+    </ul>
+    <div id="city-display">
+        <img id="city-image" src="" alt="City">
+        <div id="city-name"></div>
+    </div>
+
+    <script>
+        function showCity(image, name) {
+            const display = document.getElementById('city-display');
+            const img = document.getElementById('city-image');
+            const cityName = document.getElementById('city-name');
+
+            // Hiển thị hình ảnh và thông tin
+            img.src = './img/'+ image + '.png';
+            img.alt = name;
+            cityName.textContent = name;
+
+            // Hiển thị khung thông tin
+            display.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

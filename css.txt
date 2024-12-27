@@ -1,0 +1,40 @@
+Inline Style Sheet
+❑ Thường sử dụng cho một phần tử đơn lẻ;
+❑ Sử dụng thuộc tính style trong thẻ thành phần HTML
+
+Internal Style Sheet (Embedding)
+❑ Được nhúng trong thẻ <style>, đặt trong khối <head> … </head>
+
+External Style Sheet
+❑ Code CSS được đặt trong một tập tin *.CSS (Style Sheet);
+❑ Nhúng tập tin Style Sheet vào file HTML, sử dụng thuộc tính id hoặc class để đặt vào thẻ thành phần;
+
+
+Media CSS
+❑ Hỗ trợ tự động thay đổi layout theo kích thước của thiết bị hiển thị;
+❑ Cú pháp:
+❑ Trong đó mediatype:
+– all: Dùng cho mọi thiết bị (default);
+– print: Dùng cho máy in;
+– screen: Dùng cho máy tính và các thiết bị smart phone;
+❑ Phối hợp với các từ khoá not (phủ định), only (chỉ có), and (và) để đưa ra điều kiện truy
+vấn thiết bị hiển thị;
+❑ Media Feature: là các thuộc tính ràng buộc nhằm kiểm tra trạng thái hiện tại của màn hình
+hiển thị;
+
+/*Smart phone nhỏ*/
+@media screen and (min-width: 240px){
+}
+/*Iphone(480 x 640)*/
+@media screen and (min-width: 320px){
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (min-width: 480px){ 
+}
+
+/*Ipad dọc(768 x 1024)*/
+@media screen and (min-width: 768px){
+}
+/*Ipad ngang(1024 x 768)*/
+@media screen and (min-width: 1024px){
+}

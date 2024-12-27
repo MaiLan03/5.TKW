@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai2</title>
+    <style>
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: green;
+        }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chào mừng bạn đến với trang web của chúng tôi!</h1>
+    <p>Hôm nay là: <span id="currentDate"></span></p>
+    <script>
+        window.onload = function() {
+            const currentDate = new Date();
+            const day = currentDate.getDate();
+            const month = currentDate.getMonth() + 1; 
+            const year = currentDate.getFullYear();
+            const hours = currentDate.getHours();
+            const minutes = currentDate.getMinutes();
+            const seconds = currentDate.getSeconds();
+            const formattedDate = `${day}/${month}/${year} ${hours}:${minutes}:${seconds}`;
+            document.getElementById("currentDate").textContent = formattedDate;
+        };
+    </script>
+</body>
+</html>
